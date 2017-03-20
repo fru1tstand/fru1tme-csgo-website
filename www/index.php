@@ -13,12 +13,12 @@ Autoload::setup(PHP_ROOT);
 Session::setup("citatsia-php-session");
 
 Router::setup()
-    ->setContentDirectory('../php/me/fru1t/fmcsgo/content')
-    ->setDefaultContentPagePath('home.php')
-    ->setErrorPagePath('home.php')
+    ->setContentDirectory('../php/me/fru1t/fmcsgo/content/motd')
+    ->setDefaultContentPagePath('csgo.php')
+    ->setErrorPagePath('csgo.php')
     ->setPageParameterName(Router::DEFAULT_PAGE_PARAMETER_NAME)
-    ->map(Route::create('styles.css', '../styles/out/global.css', Http::HEADER_CONTENT_TYPE_CSS))
-    ->map(Route::create('global.css.map', '../styles/out/global.css.map'))
+    ->map(Route::create('styles.css', '../styles/out/styles.css', Http::HEADER_CONTENT_TYPE_CSS))
+    ->map(Route::create('styles.css.map', '../styles/out/styles.css.map'))
     ->complete();
 Templates::setup()->complete();
 

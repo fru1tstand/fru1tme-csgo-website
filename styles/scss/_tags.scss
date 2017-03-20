@@ -1,0 +1,18 @@
+// Defines tag-level styles.
+* {
+  box-sizing: border-box;
+}
+
+body, html,
+table, tr, td, th, thead, tbody, tfoot,
+ul, ol, li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $body-background-color;
+  color: $body-color;
+}

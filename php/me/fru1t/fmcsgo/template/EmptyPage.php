@@ -28,7 +28,7 @@ class EmptyPage extends Template {
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="styles.css" />
+	<link type="text/css" rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   {$fields[self::FIELD_BODY]}
